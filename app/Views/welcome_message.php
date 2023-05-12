@@ -223,7 +223,6 @@
 
         <h2>Donde tus plantas crecen de placer</h2>
 
-        <h4>dsaasdasdasda</h4>
     </div>
 
 </header>
