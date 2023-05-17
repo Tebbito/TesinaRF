@@ -31,11 +31,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('nosotros', 'Home::nosotros');
-$routes->get('login', 'Auth::index');
-$routes->get('login', 'Home::index');
-$routes->get('register', 'Auth::index');
-$routes->get('register', 'Home::index');
-$routes->gwt('catalogo', 'home::catalogo');
+
 
 /*
  * --------------------------------------------------------------------
