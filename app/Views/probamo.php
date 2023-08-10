@@ -93,7 +93,6 @@
         .producto {
             display: flex;
             flex-direction: column;
-
             border-radius: 10px 10px 10px 10px;
             list-style: none;
             min-width: 300px;
@@ -107,6 +106,7 @@
             border: none;
             border-radius: 10px;
             padding: 12px 0;
+            aspect-ratio: 1 / 1;
             text-decoration: none;
             text-align: left;
             margin: 0 auto;
@@ -128,7 +128,7 @@
         .img {
             max-height: 220px;
             height: 100%;
-            object-fit: ;
+            object-fit: contain;
             transition: 200ms ease-in;
             box-shadow: 6px 31px 102px -71px rgba(0, 0, 0, 0.75) inset;
             -webkit-box-shadow: 6px 31px 102px -71px rgba(0, 0, 0, 0.75) inset;
@@ -186,6 +186,7 @@
             <?php endforeach; ?>
         </ul>
     <?php else: ?>
+
         <p>No hay productos disponibles en este momento.</p>
     <?php endif; ?>
 

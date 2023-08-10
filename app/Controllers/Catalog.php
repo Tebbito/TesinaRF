@@ -12,7 +12,7 @@ class Catalog extends BaseController
         $consulta = new ProductModel;
         $resultado['producto'] = $consulta->recibir_productos();
 
-        return view('index', $resultado);
+        return view('probamo', $resultado);
     }
 }
 

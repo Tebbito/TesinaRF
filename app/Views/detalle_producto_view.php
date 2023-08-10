@@ -6,6 +6,41 @@
     <title>Detalle del Producto</title>
 </head>
 <style>
+    body {
+        background-color: whitesmoke;
+        font-family: Arial, sans-serif;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #33a0cc;
+        padding-left: 20px;
+    }
+
+    p {
+        color: #666;
+        padding-left: 20px;
+    }
+
+    .TITULOO {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 80px;
+        font-size: 40px;
+        color: rgb(2, 56, 62);
+    }
+
     /*------------NAVBAR----------------*/
     .navbar {
         height: auto;
@@ -62,6 +97,37 @@
     </h1>
     <p>
         <?php echo $result["description"] ?>
+    </p>
+
+    <p>
+        <?php echo $result["Descripcion 2"] ?>
+    </p>
+    <p>
+        <?php echo $result["Descripcion 3"] ?>
+    </p>
+    <p>
+        <?php echo $result["Descripcion 4"] ?>
+    </p>
+    <p>
+        <?php echo $result["Descripcion 5"] ?>
+    </p>
+    <p>
+        <?php echo $result["Descripcion 6"] ?>
+    </p>
+    <p>
+        <?php echo $result["Descripcion 7"] ?>
+    </p>
+    <p>
+        <?php echo $result["Descripcion 8"] ?>
+    </p>
+    <p>
+        <?php echo $result["Descripcion 9"] ?>
+    </p>
+    <p>
+        <?php echo $result["Descripcion 10"] ?>
+    </p>
+    <p>
+        <?php echo $result["Descripcion 11"] ?>
     </p>
     <p>alos</p>
 </body>
