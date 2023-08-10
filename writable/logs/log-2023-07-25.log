@@ -1,0 +1,610 @@
+ERROR - 2023-07-25 11:59:13 --> mysqli_sql_exception: Unknown column 'products.deleted_at' in 'where clause' in C:\xampp\htdocs\TesinaTF\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\TesinaTF\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TesinaTF\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TesinaTF\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TesinaTF\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TesinaTF\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TesinaTF\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '$id')
+#6 C:\xampp\htdocs\TesinaTF\app\Controllers\Detalle_producto_controller.php(12): CodeIgniter\BaseModel->find('$id')
+#7 C:\xampp\htdocs\TesinaTF\system\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+#8 C:\xampp\htdocs\TesinaTF\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+#9 C:\xampp\htdocs\TesinaTF\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TesinaTF\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-25 11:59:13 --> Unknown column 'products.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `products`
+WHERE `products`.`deleted_at` IS NULL
+AND `products`.`id` = \'$id\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`
+WHERE `products`.`deleted_at` IS NULL
+AND `products`.`id` = \'$id\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`
+WHERE `products`.`deleted_at` IS NULL
+AND `products`.`id` = \'$id\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `products`.`deleted_at` IS NULL
+AND `products`.`id` = :products.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '$id')
+ 7 APPPATH\Controllers\Detalle_producto_controller.php(12): CodeIgniter\BaseModel->find('$id')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 11:59:30 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 11:59:33 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 11:59:35 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 11:59:35 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 11:59:36 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 11:59:36 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 11:59:36 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 11:59:36 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 11:59:36 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:00:13 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:00:14 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:00:14 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:00:14 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:00:14 --> Invalid file: "detalles_producto_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detalles_producto_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalles_producto_view', [], true)
+ 3 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalles_producto_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:00:23 --> Undefined array key "id"
+in APPPATH\Views\detalle_producto_view.php on line 9.
+ 1 APPPATH\Views\detalle_producto_view.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('$id')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:08:30 --> Undefined variable $name
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:08:32 --> Undefined variable $name
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:08:32 --> Undefined variable $name
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:08:32 --> Undefined variable $name
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:08:32 --> Undefined variable $name
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:08:33 --> Undefined variable $name
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:08:33 --> Undefined variable $name
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:09:46 --> Undefined variable $name
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:10:21 --> Undefined variable $p
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:13 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:14 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:14 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:15 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:15 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:15 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:15 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:15 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:16 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:16 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:17 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:17 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:17 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:17 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:17 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:17 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:19 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:19 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:11:19 --> Attempt to read property "name" on string
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:12:12 --> Uninitialized string offset 1
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 1', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:13:11 --> Attempt to read property "name" on array
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:13:46 --> Undefined array key 0
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:14:06 --> Undefined array key 0
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:16:36 --> Undefined constant "p"
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 4 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:16:42 --> Undefined constant "result"
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 4 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:16:54 --> Undefined array key 0
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:17:05 --> Attempt to read property "name" on array
+in APPPATH\Views\detalle_producto_view.php on line 11.
+ 1 APPPATH\Views\detalle_producto_view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:47:12 --> Unsupported operand types: string + string
+in APPPATH\Views\index.php on line 191.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Catalog.php(13): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalog->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalog))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:47:12 --> Unsupported operand types: string + string
+in APPPATH\Views\index.php on line 191.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Catalog.php(13): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalog->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalog))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:47:13 --> Unsupported operand types: string + string
+in APPPATH\Views\index.php on line 191.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Catalog.php(13): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalog->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalog))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-25 12:47:13 --> Unsupported operand types: string + string
+in APPPATH\Views\index.php on line 191.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\Catalog.php(13): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalog->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalog))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

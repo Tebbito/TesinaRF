@@ -29,8 +29,38 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('nosotros', 'Home::nosotros');
+//  TODO LO QUE ES ION AUTH
+
+//https://www.thecolvinco.com/es/comprar-planta-online/pamela-pachira-aquatica
+
+$routes->get('/', 'Catalog::index');
+$routes->get('/nosotros', 'Home::aboutUs');
+$routes->get('/detelle_producto', 'Catalog::index');
+$routes->get('/cart', 'Cart::index');
+$routes->get('/cart', [Cart::class, 'index']);
+$routes->get('/cart/add/(:num)', [Cart::class, 'addToCart/$1']);
+$routes->get('/cart/remove/(:num)', [Cart::class, 'removeFromCart/$1']);
+$routes->get('/cart/clear', [Cart::class, 'clearCart']);
+$routes->get('/cart', [Cart::class, 'viewCart']);
+$routes->get('/product/(:any)', 'Detalle_producto_controller::CargarPagina/$1');
+
+// Ruta para el catálogo de ventas
+
+// Ruta IonAuth
+$routes->group('auth', ['namespace' => 'App\Controllers'], function ($routes) {
+    $routes->add('login', 'Auth::login');
+    $routes->get('logout', 'Auth::logout');
+    $routes->add('forgot_password', 'Auth::forgot_password');
+    $routes->get('/', 'Auth::index');
+    $routes->add('create_user', 'Auth::create_user');
+    $routes->add('edit_user/(:num)', 'Auth::edit_user/$1');
+    $routes->add('create_group', 'Auth::create_group');
+    $routes->get('activate/(:num)', 'Auth::activate/$1');
+    $routes->get('activate/(:num)/(:hash)', 'Auth::activate/$1/$2');
+    $routes->add('deactivate/(:num)', 'Auth::deactivate/$1');
+    $routes->get('reset_password/(:hash)', 'Auth::reset_password/$1');
+    $routes->post('reset_password/(:hash)', 'Auth::reset_password/$1');
+});
 
 
 /*

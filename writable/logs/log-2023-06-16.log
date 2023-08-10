@@ -1,0 +1,11 @@
+CRITICAL - 2023-06-16 11:31:42 --> Undefined variable $resultado
+in APPPATH\Views\index.php on line 42.
+ 1 APPPATH\Views\index.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultado', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\index.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Catalog.php(13): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalog->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalog))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

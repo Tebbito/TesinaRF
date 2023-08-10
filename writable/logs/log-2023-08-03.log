@@ -1,0 +1,103 @@
+CRITICAL - 2023-08-03 17:12:22 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-03 17:12:27 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-03 17:12:39 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-03 17:12:50 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 17:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 17:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 17:16:07 --> Invalid file: "IonAuth\Views\Messages\list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IonAuth\\Views\\Messages\\list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('IonAuth\\Views\\Messages\\list', [], true)
+ 3 APPPATH\Models\IonAuthModel.php(2243): view('IonAuth\\Views\\Messages\\list', [...])
+ 4 [internal function]: App\Models\IonAuthModel->messages()
+ 5 APPPATH\Libraries\IonAuth.php(100): call_user_func_array([...], [])
+ 6 APPPATH\Controllers\Auth.php(108): App\Libraries\IonAuth->__call('messages', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 17:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 17:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 17:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 17:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 17:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 17:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 17:21:28 --> Invalid file: "IonAuth\Views\Messages\list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IonAuth\\Views\\Messages\\list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('IonAuth\\Views\\Messages\\list', [], true)
+ 3 APPPATH\Models\IonAuthModel.php(2243): view('IonAuth\\Views\\Messages\\list', [...])
+ 4 [internal function]: App\Models\IonAuthModel->messages()
+ 5 APPPATH\Libraries\IonAuth.php(100): call_user_func_array([...], [])
+ 6 APPPATH\Controllers\Auth.php(152): App\Libraries\IonAuth->__call('messages', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->logout()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-03 17:31:02 --> Cannot call constructor
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-03 17:31:32 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-03 17:31:50 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 17:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 17:32:22 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 17:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 17:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 17:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 17:56:27 --> Invalid file: "IonAuth\Views\Messages\list.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IonAuth\\Views\\Messages\\list.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('IonAuth\\Views\\Messages\\list', [], true)
+ 3 APPPATH\Models\IonAuthModel.php(2243): view('IonAuth\\Views\\Messages\\list', [...])
+ 4 [internal function]: App\Models\IonAuthModel->messages()
+ 5 APPPATH\Libraries\IonAuth.php(100): call_user_func_array([...], [])
+ 6 APPPATH\Controllers\Auth.php(108): App\Libraries\IonAuth->__call('messages', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-03 17:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 17:57:19 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,30 @@
+CRITICAL - 2023-08-10 11:12:07 --> Cannot call constructor
+in APPPATH\Controllers\BaseController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 11:13:37 --> syntax error, unexpected token "protected", expecting end of file
+in APPPATH\Controllers\BaseController.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TesinaTF\\app\\Controllers\\BaseController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BaseController')
+ 3 APPPATH\Controllers\Catalog.php(8): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BaseController')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('C:\\xampp\\htdocs\\TesinaTF\\app\\Controllers\\Catalog.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\TesinaTF\\app\\Controllers\\Catalog.php')
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Catalog')
+ 7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Catalog')
+ 8 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Catalog', true)
+ 9 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 11:29:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\detalle_producto_view.php on line 21.
+ 1 APPPATH\Views\detalle_producto_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\detalle_producto_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('detalle_producto_view', [], true)
+ 5 APPPATH\Controllers\Detalle_producto_controller.php(14): view('detalle_producto_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Detalle_producto_controller->CargarPagina('img', 'chizismart.png')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detalle_producto_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

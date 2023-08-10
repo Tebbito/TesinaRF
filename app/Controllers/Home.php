@@ -2,16 +2,20 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+use CodeIgniter\Controller;
+
+class Home extends Controller
 {
+
+
     public function index()
     {
-        return view('welcome_message');
+        return view('Inicio.php');
     }
-    
-    public function nosotros()
+    public function aboutUs()
     {
         return view('nosotros');
     }
-    
+
+
 }

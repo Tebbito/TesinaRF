@@ -1,0 +1,33 @@
+CRITICAL - 2023-07-26 01:48:46 --> Undefined array key "id"
+in APPPATH\Views\index.php on line 191.
+ 1 APPPATH\Views\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\index.php', 191)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Catalog.php(13): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalog->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalog))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 01:48:54 --> Undefined array key "id"
+in APPPATH\Views\index.php on line 191.
+ 1 APPPATH\Views\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\index.php', 191)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Catalog.php(13): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalog->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalog))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 01:51:10 --> Undefined array key "id"
+in APPPATH\Views\index.php on line 191.
+ 1 APPPATH\Views\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\index.php', 191)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\TesinaTF\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Catalog.php(13): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Catalog->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalog))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
